@@ -1,16 +1,16 @@
 Format: 3.0 (quilt)
 Source: librdkafka
-Binary: librdkafka1, librdkafka-dev, librdkafka1-dbg
+Binary: librdkafka1, librdkafka++1, librdkafka-dev
 Architecture: any
-Version: 0.9.1-1pre1
-Maintainer: Magnus Edenhill <librdkafka@edenhill.se>
+Version: 1.3.0-1
+Maintainer: Faidon Liambotis <paravoid@debian.org>
+Uploaders: Christos Trochalakis <ctrochalakis@debian.org>, ChangZhuo Chen (陳昌倬) <czchen@debian.org>
 Homepage: https://github.com/edenhill/librdkafka
-Standards-Version: 3.9.6
-Vcs-Browser: https://github.com/edenhill/librdkafka/tree/master
-Vcs-Git: git://github.com/edenhill/librdkafka.git -b master
-Build-Depends: debhelper (>= 9), zlib1g-dev, libssl-dev, libsasl2-dev, python
+Standards-Version: 4.4.1
+Vcs-Browser: https://salsa.debian.org/kafka-team/librdkafka
+Vcs-Git: https://salsa.debian.org/kafka-team/librdkafka.git
+Build-Depends: debhelper-compat (= 12), liblz4-dev (>= 0.0~r123), libsasl2-dev, libssl-dev, python, zlib1g-dev
 Package-List:
+ librdkafka++1 deb libs optional arch=any
  librdkafka-dev deb libdevel optional arch=any
  librdkafka1 deb libs optional arch=any
- librdkafka1-dbg deb debug extra arch=any
-Original-Maintainer: Faidon Liambotis <paravoid@debian.org>
