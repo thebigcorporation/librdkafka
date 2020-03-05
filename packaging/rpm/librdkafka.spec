@@ -51,7 +51,7 @@ using librdkafka.
 
 # --install-deps will install missing dependencies that are not available
 # through BuildRequires, such as libzstd, which will be linked statically.
-%configure --install-deps --disable-lz4-ext
+%configure --install-deps --disable-lz4-ext --disable-zstd
 
 %build
 cat config.log
